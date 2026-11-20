@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' https://static.line-scdn.net; style-src 'unsafe-inline'; connect-src https://ssfjopzfzsuwcxwirggv.supabase.co https://api.line.me https://access.line.me https://liff.line.me https://static.line-scdn.net; frame-src https://access.line.me https://liff.line.me; base-uri 'none'; form-action 'none'; object-src 'none'">
+<title>新規同意の隔離確認</title><style>body{font-family:system-ui,sans-serif;background:#fffaf9;color:#302027;margin:20px;line-height:1.8}main{max-width:600px;margin:auto}h1,a{color:#881337}button{padding:12px;margin:8px;background:#881337;color:white;border:0;border-radius:10px}button:disabled{opacity:.5}label{display:block;margin:12px 0}pre{white-space:pre-wrap;overflow-wrap:anywhere}</style>
+<script defer src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script><script defer src="./consent-check.js"></script></head>
+<body><main><h1>新規同意の隔離確認</h1><p>専用のテスト領域だけを使用します。本番・既存の隔離登録・シフト・バックアップは変更しません。</p>
+<p id="stage" role="status">本人確認を開始する前です。</p><button id="identify">LINE本人確認・登録状況確認</button>
+<section id="consent" hidden><p>同意バージョン：2026-11-20</p><p><a href="./terms.html?v=20261120" target="_blank" rel="noopener noreferrer">基本利用規約</a> ／ <a href="./privacy.html?v=20261120" target="_blank" rel="noopener noreferrer">プライバシーポリシー</a></p>
+<label><input id="agree" type="checkbox">基本利用規約・プライバシーポリシーを確認し、同意します。</label>
+<label><input id="age" type="checkbox">18歳未満の場合は、親権者の同意を得ています。</label>
+<button id="start" disabled>同意して専用領域で21日間の無料お試しを開始</button></section>
+<pre id="result"></pre><p>既存アプリとは別の検証画面です。シフト登録・クラウド保存・復元は行いません。</p></main></body></html>
